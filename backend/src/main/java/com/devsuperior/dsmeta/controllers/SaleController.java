@@ -22,7 +22,7 @@ public class SaleController {
 	@Autowired
 	private SmsService smsService;
 	
-	@GetMapping
+	@GetMapping 
 	public Page<Sale> findSales(
 			@RequestParam(value="minDate",defaultValue="") String minDate,
 			@RequestParam(value="maxDate",defaultValue="") String maxDate,

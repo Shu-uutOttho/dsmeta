@@ -26,9 +26,8 @@ public class Sale {
 	}
 
 	public Sale(Long id, String sellerName, Integer visited, Integer deals, Double amount, LocalDate date) {
-		super();
 		this.id = id;
-		SellerName = sellerName;
+		this.SellerName = sellerName;
 		this.visited = visited;
 		this.deals = deals;
 		this.amount = amount;
@@ -48,7 +47,7 @@ public class Sale {
 	}
 
 	public void setSellerName(String sellerName) {
-		SellerName = sellerName;
+		this.SellerName = sellerName;
 	}
 
 	public Integer getVisited() {
